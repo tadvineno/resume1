@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>رزومه علی تقوی فر</title>
+<style>
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Doran';
+    src: url('fonts/Doran-ExtraBold.ttf') format('truetype');
+    font-weight: 900;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Doran', sans-serif;
+    background: linear-gradient(135deg, #fff7c0, #fff1a8);
+    color: #4a3c00;
+    direction: rtl;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7;
+    cursor: none;
+    user-select: none;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 50px auto;
+    background: #fffbe0;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(122, 106, 0, 0.25);
+    padding: 45px 55px;
+    border: 2px solid #b2a429;
+    position: relative;
+    user-select: text;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 3.4rem;
+    margin-bottom: 0;
+    letter-spacing: 0.1em;
+    color: #b29f00;
+    text-shadow: 0 2px 6px rgba(178,159,0,0.6);
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #a08800;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 0.07em;
+    font-style: italic;
+  }
+
+  .about {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #5a4a00;
+    border-left: 5px solid #b2a429;
+    padding-left: 18px;
+    margin-bottom: 40px;
+    background: #fffdd0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(178,159,0,0.15);
+    line-height: 1.6;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: #b2a429;
+    margin-bottom: 18px;
+    border-bottom: 4px solid #a08800;
+    padding-bottom: 8px;
+    letter-spacing: 0.06em;
+  }
+
+  ul.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  ul.skills li {
+    background: #b2a429;
+    color: #fffbe0;
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 5px 15px rgba(178,159,0,0.8);
+    cursor: default;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+
+  ul.skills li:hover {
+    background-color: #8f7d00;
+    box-shadow: 0 8px 20px rgba(143,125,0,0.9);
+  }
+
+  .sample-work {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .sample-work a {
+    background: #b2a429;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 40px;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.3rem;
+    box-shadow: 0 8px 25px rgba(178,159,0,0.9);
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+  }
+  .sample-work a:hover {
+    background-color: #8f7d00;
+    transform: scale(1.07);
+  }
+
+  .contact-info {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #b2a429;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .contact-info a {
+    text-decoration: none;
+    color: #b2a429;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #b2a429;
+    padding: 8px 18px;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(178,159,0,0.4);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    user-select: none;
+  }
+  .contact-info a:hover {
+    background-color: #b2a429;
+    color: #fffbe0;
+  }
+
+  .contact-info .phone {
+    border-color: #a08800;
+    color: #a08800;
+    box-shadow: 0 6px 15px rgba(160,136,0,0.5);
+  }
+  .contact-info .phone:hover {
+    background-color: #a08800;
+    color: #fffbe0;
+  }
+
+  .contact-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    flex-shrink: 0;
+  }
+
+  /* موس دایره‌ای اختصاصی */
+  #cursor-circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle at center, #d1c100, #8f7d00);
+    box-shadow: 0 0 15px #b2a429cc, 0 0 35px #8f7d00cc;
+    opacity: 0.8;
+    transition: 
+      opacity 0.3s ease,
+      transform 0.15s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.3s ease,
+      background 0.3s ease;
+    z-index: 9999;
+    user-select: none;
+    transform-origin: center center;
+  }
+  #cursor-circle.active {
+    opacity: 1;
+    transform: scale(1.8);
+    box-shadow: 0 0 40px #d1c100ff, 0 0 75px #8f7d00ff;
+    background: radial-gradient(circle at center, #fff48f, #a08800);
+  }
+
+  /* دنباله موس */
+  .cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle at center, #d1c100cc, #8f7d0099);
+    box-shadow: 0 0 10px #b2a429bb, 0 0 25px #8f7d0099;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    z-index: 9998;
+    user-select: none;
+  }
+
+  /* واکنشگرایی */
+  @media (max-width: 768px) {
+    .container {
+      margin: 25px 15px;
+      padding: 35px 25px;
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .sample-work a {
+      font-size: 1.1rem;
+      padding: 14px 32px;
+    }
+    .contact-info a {
+      font-size: 1rem;
+      padding: 6px 14px;
+    }
+    ul.skills li {
+      font-size: 0.85rem;
+      padding: 8px 18px;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .about {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>علی تقوی فر</h1>
+    <div class="subtitle">تدوینگر خلاق با دید متفاوت و تسلط بر جادوی تصویر</div>
+
+    <div class="about">
+      من نه فقط یک تدوینگر، بلکه قصه‌گو و جادوگر تصاویر هستم. 
+      با اشتیاق و تمرکز، ویدیوهایی می‌سازم که دیده و شنیده شوند.
+      هر پروژه برای من یک چالش تازه است و عاشق کشف راه‌های نوین در ادیت و تدوین هستم.
+    </div>
+
+    <h2>مهارت‌ها</h2>
+    <ul class="skills">
+      <li>ادوبی پریمیر</li>
+      <li>افترافکت</li>      
+          <li>ایده‌پردازی</li>
+      <li>تدوین ریلز اینستاگرام</li>
+    </ul>
+
+    <div class="sample-work">
+      <a href="https://www.instagram.com/alitaghavi/" target="_blank" rel="noopener noreferrer">برای دیدن نمونه کار ها کلیک کنید</a>
+    </div>
+
+    <div class="contact-info">
+      <a class="phone" href="tel:09999396581" title="تماس تلفنی">
+        <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.62 10.79a15.091 15.091 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.83.74a1 1 0 011 1v3.5a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.33.26 2.63.74 3.83a1 1 0 01-.21 1.11l-2.2 2.2z"></path>
+        </svg>
+        ۰۹۹۹۹۳۹۶۵۸۱
+      </a>
+    </div>
+  </div>
+
+  <!-- موس دایره‌ای -->
+  <div id="cursor-circle"></div>
+  <!-- کانتینر دنباله -->
+  <div id="cursor-trail-container"></div>
+
+<script>
+  const cursor = document.getElementById('cursor-circle');
+  const trailContainer = document.getElementById('cursor-trail-container');
+
+  const trailCount = 7;
+  const trails = [];
+
+  for(let i=0; i < trailCount; i++){
+    const div = document.createElement('div');
+    div.classList.add('cursor-trail');
+    trailContainer.appendChild(div);
+    trails.push({
+      el: div,
+      x: 0,
+      y: 0,
+      lastX: 0,
+      lastY: 0,
+    });
+  }
+
+  let mouseX = 0;
+  let mouseY = 0;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // موقعیت موس اصلی (دایره بزرگ)
+    cursor.style.transform = `translate(${mouseX - cursor.offsetWidth / 2}px, ${mouseY - cursor.offsetHeight / 2}px)`;
+
+    // فعال شدن افکت وقتی موس روی لینک یا دکمه است
+    if(e.target.closest('a, button')){
+      cursor.classList.add('active');
+    } else {
+      cursor.classList.remove('active');
+    }
+  });
+
+  function animateTrail(){
+    let x = mouseX;
+    let y = mouseY;
+
+    trails.forEach((trail, i) => {
+      trail.x += (x - trail.x) * 0.3;
+      trail.y += (y - trail.y) * 0.3;
+
+      trail.el.style.transform = `translate(${trail.x - trail.el.offsetWidth / 2}px, ${trail.y - trail.el.offsetHeight / 2}px)`;
+      trail.el.style.opacity = (0.6 - i * 0.08).toFixed(2);
+
+      // موقعیت برای دنباله بعدی
+      x = trail.x;
+      y = trail.y;
+    });
+
+    requestAnimationFrame(animateTrail);
+  }
+
+  animateTrail();
+</script>
+
+</body>
+</html>
